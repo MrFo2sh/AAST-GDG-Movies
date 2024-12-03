@@ -1,0 +1,101 @@
+.nav-bar {
+  display: flex;
+  height: 90px;
+  background: #80808000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  font-family: sans-serif;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 10px;
+}
+
+.nav-bar input {
+  padding: 5px 15px;
+}
+
+.nav-bar button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav-bar a:hover {
+  color: aqua;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+.slider {
+  height: 650px;
+  /* background-image: url("/assets/wp7946869.jpg"); */
+  /* background-image: url("/assets/tom_holland_spider_man_hd_spider_man_no_way_home-2560x1440.jpg"); */
+  background-image: url("/assets/24.jpg.webp");
+  background-color: #0000003d;
+  background-size: cover;
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+}
+
+.slider div {
+  color: white;
+  width: 40%;
+  margin: 45px;
+  font-size: 20px;
+}
+.slider div h1 {
+  margin: 0px;
+}
+
+.movie-list {
+  background-color: #121212;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.movie-card {
+  width: 250px;
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.movie-card img {
+  width: 250px;
+  height: 375px;
+  border-radius: 10px;
+}
+
+.movie-card p {
+  margin: 7px 0px;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-details div {
+  border: solid 1px;
+  padding: 0px 5px;
+  border-radius: 8px 2px;
+}
+
+.footer {
+}
