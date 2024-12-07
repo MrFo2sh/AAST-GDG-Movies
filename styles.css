@@ -37,6 +37,13 @@ body {
   margin: 0px;
 }
 
+body {
+  background: unset !important;
+  background-image: url("assets/website_background.jpg") !important;
+  background-color: #000000de !important;
+  background-blend-mode: overlay;
+}
+
 .slider {
   height: 650px;
   /* background-image: url("/assets/wp7946869.jpg"); */
@@ -60,7 +67,7 @@ body {
 }
 
 .movie-list {
-  background-color: #121212;
+  background-color: transparent;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -97,5 +104,22 @@ body {
   border-radius: 8px 2px;
 }
 
-.footer {
+.container footer a,
+.container footer p {
+  color: white !important;
+}
+
+.swiper {
+  width: 70% !important;
+  height: 70% !important;
+  border-radius: 15px !important;
+  margin: 50px auto !important;
+}
+
+.custom-footer {
+  margin: 0px !important;
+  width: 100% !important;
+  max-width: unset !important;
+  background: black;
+  padding: 10px;
 }

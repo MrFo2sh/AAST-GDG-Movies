@@ -5,32 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AAST Movies</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="modulepreload" href="swiper/vendor.315b6b96.js" />
+    <link rel="stylesheet" href="swiper/index.ec7dc4bf.css" />
   </head>
   <body>
-    <div class="nav-bar">
-      <div>
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">Top IMDB</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">GDG-AAST</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Top-IMDB</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
+    </nav>
 
-      <div>
-        <input type="text" placeholder="Search.." />
-        <button>Search</button>
-      </div>
-    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- shaders image must be a direct child of the slide and have additional "swiper-gl-image" class  -->
+          <img class="swiper-gl-image" src="/assets/24.jpg.webp" alt="" />
+          <div class="swiper-slide-content">
+            <div class="swiper-slide-title">Spider-Man: No Way Home</div>
+          </div>
+        </div>
 
-    <div id="slider" class="slider">
-      <div>
-        <h1 id="slider-title"></h1>
-        <p id="slider-description"></p>
+        <div class="swiper-slide">
+          <img
+            class="swiper-gl-image"
+            src="/assets/tom_holland_spider_man_hd_spider_man_no_way_home-2560x1440.jpg"
+            alt=""
+          />
+          <div class="swiper-slide-content">
+            <div class="swiper-slide-title">Free Guy</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="swiper-gl-image" src="/assets/wp7946869.jpg" alt="" />
+          <div class="swiper-slide-content">
+            <div class="swiper-slide-title">The Nice Guys</div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div id="movie-list" class="movie-list"></div>
 
-    <script src="./script.js"></script>
+    <div class="container custom-footer">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 AAST-GDG, EDU</p>
+      </footer>
+    </div>
 
-    <div class="footer"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script type="module" crossorigin src="swiper/index.36aab0d1.js"></script> -->
+
+    <script src="./script.js"></script>
   </body>
 </html>
